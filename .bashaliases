@@ -1,17 +1,21 @@
+# Aliases for everyone!
+
 alias l="ls"
-alias rip="reboot"
-alias plz="sudo"
-alias python="python3"
-alias winc="cd /mnt/c/"
-windata () { cd /mnt/c/Users/user/Desktop/$1 ; }
-alias bwinfdata="cd /mnt/c/Users/user/Desktop/BWINF"
-alias bsetup="nano /home/user/.bashrc"
-alias sl="ls"
-alias cls="clear"
-alias upd_all="sudo apt update && sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
 alias la="ls -la"
+alias please="sudo"
+alias py="python3"
+alias bashsetup="nano /home/user/.bashrc"
+alias sl="ls"
 alias ~="cd ~"
-touchsh () { touch $1 && nano $1 && sudo chmod +x $1 ; }
-mkdir1 () { mkdir $1 && cd $1 ; }
-win () { cd /mnt/c/Users/User/ ; }
-cdl () { cd $1 ; ls ; }
+alias autoupdate="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+makex () { touch $1 && nano $1 && sudo chmod +x $1 ; }
+md () { mkdir $1 && cd $1 ; }
+
+# Aliases custom made for the linux subsystem for Windows.
+
+win () { cd /mnt/c/$1 ; }
+winusers () { cd /mnt/c/Users/$1 ; }
+alias cls="clear"
+Install-Package () { sudo apt install $1 -y ; }
+Update-Packages () { sudo apt update ; sudo apt upgrade -y; sudo apt autoremove -y; echo AutoUpdate done.; }
+

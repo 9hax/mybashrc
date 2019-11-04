@@ -115,8 +115,11 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export DISPLAY=:0.0
+
+# Stuff for starting all customizations used for mybashrc and the Linux Subsystem for Windows.
 source ~/.bashaliases
 source ~/.bashfancy
 prompt-fancy
 ./todo
+# Uncomment this is you are using the X Server on the Subsystem for Windows.
+# export DISPLAY=:0.0
