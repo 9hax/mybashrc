@@ -120,6 +120,6 @@ fi
 source ~/.bashaliases
 source ~/.bashfancy
 prompt-fancy
-./todo
+source ./todo
 # Uncomment this is you are using the X Server on the Subsystem for Windows.
 # export DISPLAY=:0.0
