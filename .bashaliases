@@ -7,7 +7,7 @@ alias py="python3"
 alias bashsetup="nano /home/user/.bashrc"
 alias sl="ls"
 alias ~="cd ~"
-alias upd="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+alias upd="sudo aptitude update && sudo aptitude upgrade -y && sudo apt autoremove -y"
 makex () { touch $1 && nano $1 && sudo chmod +x $1 ; }
 md () { mkdir $1 && cd $1 ; }
 
@@ -16,6 +16,6 @@ md () { mkdir $1 && cd $1 ; }
 win () { cd /mnt/c/$1 ; }
 winusers () { cd /mnt/c/Users/$1 ; }
 alias cls="clear"
-Install-Package () { sudo apt install $1 -y ; }
-Update-Packages () { sudo apt update ; sudo apt upgrade -y; sudo apt autoremove -y; echo AutoUpdate done.; }
+Install-Package () { sudo aptitude install $1 -y ; }
+Update-Packages () { sudo aptitude update ; sudo aptitude upgrade -y; sudo apt autoremove -y; echo AutoUpdate done.; }
 
