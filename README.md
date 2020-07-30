@@ -11,7 +11,3 @@ To install mybashrc, please enter your home folder and type this command:
     source <(curl -S https://9hax.github.io/9haxify.bash)
 
 This clones the repository and copies the files to your homefolder and cleans up the installation files after.
-
-## Licensing
-
-This program is published under the Unlicense.
