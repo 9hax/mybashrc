@@ -1,7 +1,7 @@
 # Aliases for everyone!
 
 alias l="ls"
-alias la="ls -la"
+alias la="ls -lisah"
 alias please="sudo"
 alias py="python3"
 alias bashsetup="nano /home/user/.bashrc"
