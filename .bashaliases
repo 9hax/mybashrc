@@ -8,6 +8,8 @@ alias bashsetup="nano /home/user/.bashrc"
 alias sl="ls"
 alias ~="cd ~"
 alias upd="sudo aptitude update && sudo aptitude upgrade -y && sudo apt autoremove -y"
+alias cd..="cd .."
+
 makex () { touch $1 && nano $1 && sudo chmod +x $1 ; }
 md () { mkdir $1 && cd $1 ; }
 
