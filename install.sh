@@ -20,7 +20,8 @@ then
  mv .bashrc ~
  mv todo ~
  cd ..
- rm -rf mybashrc
+ #rm -rf mybashrc
+ mv mybashrc .mybashrc
  
  echo "The current todo file is:"
  source ~/todo
